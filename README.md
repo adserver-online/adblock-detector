@@ -27,12 +27,12 @@ This mode is more reliable, but it performs extra HTTP request.
 To enable extended mode, you need to pass ```true``` as second parameter of ```DetectAb``` function:
 
 ```
-    DetectAb(function (result) {
-      // handle result
-    }, true);
+DetectAb(function (result) {
+  // handle result
+}, true);
 ```
 
 ## Demo
 
-Check out [Demo page](https://adserver-online.github.io/adblock-detector/demo.html) for working example.
+Check out ```demo.html``` for working example.
 
