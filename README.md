@@ -6,8 +6,8 @@ Extended mode is disabled by default so the script does not perform any HTTP req
 
 ## Installation
 
-1. Download ```ab-detect.js``` file and host it on your webserver 
-2. Add script loading to HEAD or BODY section of your website: ```<script src="ab-detect.js" async></script>```
+1. Download ```detect-ab.js``` file and host it on your webserver 
+2. Add script loading to HEAD or BODY section of your website: ```<script src="detect-ab.js" async></script>```
 3. Call the detector by placing following code in BODY section of your webpages:
 
 ```
