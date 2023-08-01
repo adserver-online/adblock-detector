@@ -34,5 +34,5 @@ To enable extended mode, you need to pass ```true``` as second parameter of ```D
 
 ## Demo
 
-Check out ```demo.html``` for working example.
+Check out [Demo page](https://adserver-online.github.io/adblock-detector/demo.html) for working example.
 
