@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ad Block Detection Demo</title>
+    <script src="detect-ab.js" async></script>
+    <style>
+        .info {
+            background: forestgreen;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .detected {
+            background: orangered;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    window.addEventListener('load', function () {
+        DetectAb(function (result, method) {
+            var info = document.createElement('div');
+
+            if (result) {
+                info.className = 'info detected';
+                info.innerHTML = 'Your browser seems to have an ad-blocking plugin enabled. <br> It is recommended if you can add this domain to your adblocker\'s whitelist to enable a seamless viewing experience of this website.';
+                console.log('Method:', method === 1 ? 'CSS bait' : 'URL');
+            } else {
+                info.className = 'info';
+                info.innerHTML = 'Ad-blocking plugin is not detected';
+            }
+
+            document.body.appendChild(info);
+        }, true);
+    });
+</script>
+
+</body>
+</html>
